@@ -8,6 +8,8 @@ import axios from "axios";
 
 //www.jsoneditoronline.org
 //best json formatter
+//It's good practice to store the API data in state
+//directlty using the data from api is not a good pratcice
 
 class ApiCall extends Component {
   constructor(props) {
