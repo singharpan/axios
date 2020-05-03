@@ -1,11 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import ApiCall from "./apicall";
 
 function App() {
-  fetch("https://www.reddit.com/r/space.json")
-    .then((res) => res.json())
-    .then((res2) => console.log(res2.data.children));
+  // fetch("https://www.reddit.com/r/space.json")
+  //   .then((res) => res.json())
+  //   .then((res2) => console.log(res2.data.children));
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ApiCall />
     </div>
   );
 }
